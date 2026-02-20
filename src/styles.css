@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f8fa;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #1da1f2;
+  color: white;
+}
+
+.header a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.feed {
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+.post-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.profile {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
