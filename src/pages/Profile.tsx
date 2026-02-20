@@ -6,9 +6,20 @@ const user = "anon_profile";
 const Profile: React.FC = () => {
   return (
     <div className="profile">
-      <h3>Anon Profile</h3>
-      <p>Username: {user}</p>
-      <p>Rating: {getRating(user)}</p>
+      <div className="profile-header">
+        <div className="profile-avatar" />
+      </div>
+      <div className="profile-info">
+        <div className="profile-name">Anon Profile</div>
+        <div className="profile-handle">@{user}</div>
+        
+        <div className="profile-stats">
+          <div className="stat-item">
+            <span className="stat-value">{getRating(user)}</span>
+            <span className="stat-label"> Rating</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
