@@ -24,15 +24,16 @@ const Home: React.FC = () => {
 
   return (
     <div className="feed">
-      <div className="post-box">
-        <input
-          placeholder="What's the CA?"
-          value={ca}
-          onChange={e => setCa(e.target.value)}
-        />
-        <button onClick={createPost}>Post</button>
+      <div className="trending-bar">
+        <div className="trending-content">
+          <span className="trending-item"><span className="trending-label">1</span> $PEPE +12.5%</span>
+          <span className="trending-item"><span className="trending-label">2</span> $DOGE +5.2%</span>
+          <span className="trending-item"><span className="trending-label">3</span> $SHIB -2.1%</span>
+          <span className="trending-item"><span className="trending-label">4</span> $FLOKI +18.7%</span>
+          <span className="trending-item"><span className="trending-label">5</span> $BONK +9.3%</span>
+        </div>
       </div>
-
+      
       {posts.map(post => (
         <div key={post.id} className="card">
           <div className="card-header">
